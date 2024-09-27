@@ -46,8 +46,8 @@ books.delete("13")
 console.log(books)
 
 // 7. Crea un mapa que asocie el número del mes a su nombre
-let meses = new Map()
-meses = new Map([
+let mesesMap = new Map()
+mesesMap = new Map([
   [1, "enero"],
   [2, "febrero"],
   [3, "marzo"],
@@ -62,13 +62,16 @@ meses = new Map([
   [12, "diciembre"],
 ])
 
-console.log(meses)
+console.log(mesesMap)
 // 8. Comprueba si el mes número 5 existe en el map e imprime su valor
-console.log(meses.has(5))
-console.log(meses.get(5))
+console.log(mesesMap.has(5))
+console.log(mesesMap.get(5))
 // 9. Añade al mapa una clave con un array que almacene los meses de verano
-meses.set("verano", "julio, agosto, septiembre")
-console.log(meses.get("verano"))
+mesesMap.set("verano", "julio, agosto, septiembre")
+console.log(mesesMap.get("verano"))
+console.log("Ahora mostramos todo el map")
+console.log(mesesMap)
+
 // 10. Crea un Array, transfórmalo a un Set y almacénalo en un Map
 let arrayTrans = ["Fulano", "Mengano", "Propano"]
 console.log(arrayTrans)

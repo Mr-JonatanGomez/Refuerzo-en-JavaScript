@@ -1,6 +1,6 @@
 //Array y declaracion
 
-//EN JS no es obligatorio decirle cuantos  huevos tiene el array como en java
+//EN JS no es obligatorio decirle cuantos  huecos tiene el array como en java
 
 let myArray = [] // aqui corchetes, van datos
 let myArray2 = new Array() // aqui en parentesis reservamos las posiciones del array
