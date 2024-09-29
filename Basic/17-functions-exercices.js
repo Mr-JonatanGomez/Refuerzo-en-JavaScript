@@ -15,8 +15,16 @@ function suma(a, b, c) {
 
 console.log(suma(15, 10, 5))
 // 2. Crea una función que reciba un array de números y devuelva el mayor de ellos
+let myArray = [1,5,3,2,4,15,9]
 
+myArray.sort(function(a,b){
+        return a-b // esto compara a con b, y si A es negativo se coloca antes si es positivo se coloca B primero
+    })
+
+console.log(myArray[myArray.length-1])
 // 3. Crea una función que reciba un string y devuelva el número de vocales que contiene
+
+//hacer con for o for of
 
 // 4. Crea una función que reciba un array de strings y devuelva un nuevo array con las strings en mayúsculas
 
