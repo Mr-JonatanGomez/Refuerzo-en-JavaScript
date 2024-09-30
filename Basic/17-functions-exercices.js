@@ -25,8 +25,32 @@ console.log(myArray[myArray.length-1])
 // 3. Crea una función que reciba un string y devuelva el número de vocales que contiene
 
 //hacer con for o for of
+let myString = "Hola, yo soy Jonatan, futuro developer (14 VCLS)"
+const vocales = ["a","e","i","o","u"]
+let contadorVocales=0
+function numVocales(string){
+    for (let i = 0; i < string.length; i++) {
+         if(vocales.includes(string[i])){
+            contadorVocales++
+         }
+        
+    }
+    console.log(`El contador de vocales ha dado ${contadorVocales}`)
+}
+numVocales(myString)
 
 // 4. Crea una función que reciba un array de strings y devuelva un nuevo array con las strings en mayúsculas
+let str1 = ["Jose Jonatan","Sandra","Liamcillo"]
+let strConvert = []
+function convertirAMayusculas(array) {
+    
+    for (let i = 0; i < array.length; i++) {
+        strConvert.push(array[i].toUpperCase());
+    }
+    return strConvert;
+}
+    strConvert=convertirAMayusculas(str1)
+    console.log(strConvert)
 
 // 5. Crea una función que reciba un número y devuelva true si es primo, y false en caso contrario
 
