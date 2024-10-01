@@ -1,4 +1,4 @@
-//console.clear()
+console.clear()
 //EJERCICIOS FUNCTIONS
 /*
 Clase 4 en vídeo | 31/07/2024
@@ -93,8 +93,32 @@ function comunesEntreArrays(array1, array2) {
 
 comunesEntreArrays(["hola", "tio", 5, 1, 2], ["tio", "macario", 5, 3, 0, 1])
 // 7. Crea una función que reciba un array de números y devuelva la suma de todos los números pares
+let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 500]
+
+function sumaDePares(array) {
+  let suma = 0
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 == 0) {
+      suma += array[i]
+    }
+  }
+  return suma
+}
+
+console.log(sumaDePares(numeros))
 
 // 8. Crea una función que reciba un array de números y devuelva un nuevo array con cada número elevado al cuadrado
+let numerosSimples = [1, 2, 3, 4, 5, 6]
+let numerosCuadrado = []
+
+function hacerCuadrados() {
+  for (const item of numerosSimples) {
+    numerosCuadrado.push(item ** 2)
+  }
+}
+
+hacerCuadrados(numerosSimples)
+console.log(numerosCuadrado)
 
 // 9. Crea una función que reciba una cadena de texto y devuelva la misma cadena con las palabras en orden inverso
 
