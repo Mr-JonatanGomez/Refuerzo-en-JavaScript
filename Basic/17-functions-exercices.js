@@ -144,3 +144,24 @@ function vuelta(frase){
 console.log(vuelta(miFrasecita))
 
 // 10. Crea una función que calcule el factorial de un número dado
+let numero= 5
+let resulta = 0
+function factorial (num){
+for (let index = numero-1; index > 0; index--) {
+  numero *= index
+  
+}
+
+return numero
+}
+console.log(factorial(numero))
+//ESTA ES MI FORMA, seguro que es mejor con recursividad como lo siguiente
+
+function factorial(n) {
+  if (n === 0 || n === 1) {
+      return 1;
+  }
+  return n * factorial(n - 1);
+}
+
+console.log(factorial(5)); // Output: 120
