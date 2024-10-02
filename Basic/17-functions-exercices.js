@@ -121,5 +121,26 @@ hacerCuadrados(numerosSimples)
 console.log(numerosCuadrado)
 
 // 9. Crea una función que reciba una cadena de texto y devuelva la misma cadena con las palabras en orden inverso
+/*let miFrasecita = "soña 73 ognet y natanoJ esoJ yos, aloH"
+let miFreverse = ""
+function darVuelta(frase){
+  for (let index = miFrasecita.length-1; index >=0; index--) {
+    let item = miFrasecita[index];
+    miFreverse+= item
+  }
+  console.log(miFreverse)
+}
+
+darVuelta(miFrasecita)
+ESTO ES LETRAS INVERTIDAS NO PALABRAS
+*/
+let miFrasecita = "Hola, soy YODA y tengo miles años"
+let miNueva=""
+function vuelta(frase){
+  return frase.split(" ").reverse().join(" ")
+
+}
+
+console.log(vuelta(miFrasecita))
 
 // 10. Crea una función que calcule el factorial de un número dado
