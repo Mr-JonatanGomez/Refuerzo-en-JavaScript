@@ -1,7 +1,7 @@
 //Operador ternario (primero porque es el unico que no domino de todos estos)
 
 const isRainning = false
-isRainning ? console.log("Está lloviendo") : console.log("No está lloviendo") 
+isRainning ? console.log("Está lloviendo") : console.log("No está lloviendo")
 /*
 necesita la interrogacion a modo de pregunta, y el formato, en lugar
 de un if y else para el si o no...es tipo EXCEL
@@ -12,13 +12,13 @@ let a = 5
 let b = 10
 
 console.log("Operadores aritmeticos")
-console.log("suma: "+ (a + b))
-console.log("resta: "+ (a - b))
-console.log("multi: "+ (a * b))
-console.log("division: "+ (a / b))
+console.log("suma: " + (a + b))
+console.log("resta: " + (a - b))
+console.log("multi: " + a * b)
+console.log("division: " + a / b)
 
-console.log("modulo: "+ (a % b))
-console.log("potencia: "+ (a ** b)+ "\n")
+console.log("modulo: " + (a % b))
+console.log("potencia: " + a ** b + "\n")
 
 // tambien cuenta el ++ o -- es el incremento o decremento
 
@@ -26,19 +26,19 @@ console.log("potencia: "+ (a ** b)+ "\n")
 
 //Operadores de Comparacion, si comparas 5>10...sera boolean false
 //
-console.log(a>b)
-console.log(a==5) //compara igualdad por valor
-console.log(a=="5")// javascript lo diferencia y te da true, si lo es
-console.log(a===a)//compara igualdad por tipo y valor true
-console.log(a===5)//compara igualdad por tipo y valor true
-console.log(a==="5")//compara igualdad por tipo y valor false porque el tipo no es el mismo
+console.log(a > b)
+console.log(a == 5) //compara igualdad por valor
+console.log(a == "5") // javascript lo diferencia y te da true, si lo es
+console.log(a === a) //compara igualdad por tipo y valor true
+console.log(a === 5) //compara igualdad por tipo y valor true
+console.log(a === "5") //compara igualdad por tipo y valor false porque el tipo no es el mismo
 // === entra en valor cuando no quieres que tome como mismo tipo de dato una cadena y un numero
 /* != tambnien es diferente  */
 
-console.log(a!=5) //false
-console.log(a!=="5") //true, ya que compara valor y tipo
-console.log(0==false)// 0 es falso en JS
-console.log(0==false)// 0 es falso en JS
+console.log(a != 5) //false
+console.log(a !== "5") //true, ya que compara valor y tipo
+console.log(0 == false) // 0 es falso en JS
+console.log(0 == false) // 0 es falso en JS
 
 /*
 Truthy values (valores verdaderos)
@@ -72,10 +72,38 @@ console.log(5 < 10 || 15 < 20)
 console.log(5 < 10 || 15 > 20)
 console.log(5 > 10 || 15 > 20 || 30 > 40)
 
-console.log(5 > 10 && 15 > 20 || 30 < 40)
+console.log((5 > 10 && 15 > 20) || 30 < 40)
 
 // not (!)
 console.log(!true)
 console.log(!false)
 console.log(!(5 > 10 && 15 > 20))
 console.log(!(5 > 10 || 15 > 20))
+
+//
+
+// Operadores de comparación
+
+console.log(a > b) // Mayor que
+console.log(a < b) // Menor que
+console.log(a >= b) // Mayor o igual que
+console.log(a <= b) // Menor o igual que
+console.log(a == b) // Igualdad por valor
+console.log(a == 6)
+console.log(a == "6")
+console.log(a == a)
+console.log(a === a) // Igualdad por identidad (por tipo y valor) o igualdad estricta
+console.log(a === 6)
+console.log(a === "6")
+console.log(a != 6) // Desigualdad por valor
+console.log(a !== "6") // Desigualdad por identidad (por tipo y valor) o desigualdad estricta
+console.log(0 == false)
+console.log(1 == false)
+console.log(2 == false)
+console.log(0 == "")
+console.log(0 == " ")
+console.log(0 == "")
+console.log(0 == "Hola")
+console.log(0 === "")
+console.log(undefined == null)
+console.log(undefined === null)
