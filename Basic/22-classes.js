@@ -107,7 +107,8 @@ class GetSetPerson {
   set bank(newBank) {
     this.#bank = newBank
   }
-  get bank() {//dado para ver que el cambio del set se ha realizado
+  get bank() {
+    //dado para ver que el cambio del set se ha realizado
     return this.#bank
   }
 }
@@ -123,3 +124,67 @@ console.log(getPerson1.name) // al tener el get el name, ya es accesible si lo l
 
 getPerson1.bank = "IBAN987654321"
 console.log(getPerson1.bank)
+
+//HERENCIA DE CLASES
+
+class Animal {
+  constructor(name) {
+    this.name = name
+  }
+
+  sound() {
+    console.log("Emite sonido generico")
+  }
+}
+
+class Dog extends Animal {
+  run() {
+    console.log("The dog is running")
+  }
+}
+class Fish extends Animal {
+  constructor(name, size) {
+    //como en java hay que llamar a super para reescribir la clase padre dentro del constructor
+    super(name)
+    this.size = size
+  }
+
+  swim() {
+    console.log("The fish is swimming")
+  }
+}
+
+let myDog = new Dog("GomezDog") // al crear te pide un nombre...que es de Animal
+let myFish = new Fish("GomezFish", 5)
+
+myDog.sound()
+myDog.run()
+
+//myFish.run() this function is exclusive of DOGS
+myFish.swim()
+myFish.sound()
+
+//RESCRIBIR LAS FUNCIONES DE LA CLASE PADRE
+
+class Cat extends Animal {
+  constructor(name, hability) {
+    super(name)
+    this.hability = hability
+  }
+  sound() {
+    console.log("Miauuuuuuuu") //al reescribir el sound, hace el suyo propio, en lugar de el de la clase padre
+  }
+}
+
+let myCat = new Cat("GomezCat", "trepar muros")
+myCat.sound()
+
+//METODOS ESTATICOS, evitaria tener que instanciar la clase, para poder ser llamada la funcion
+
+class MathOperations {
+  static sum(a, b) {
+    return a + b
+  }
+}
+
+console.log(MathOperations.sum(4, 9))
