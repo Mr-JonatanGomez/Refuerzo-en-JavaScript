@@ -115,7 +115,7 @@ class Patin extends Vehiculo {
     this.manillar = manillar
   }
   infoVehiculo() {
-    return "Al ser un patin, pues no es un coche con infoCoche"
+    return "Al ser un patin, pues no es un coche con infoVehiculo"
   }
 }
 
