@@ -63,13 +63,20 @@ console.assert(age2 >= 18, "El usuario debe ser mayor de edad2.") // condicion y
 
 
 
-// COUNT ( cuenta la cantidad de veces que se usa una tag especifica)
+// COUNT ( cuenta la cantidad de veces que se usa una tag o linea de codigo especifica)
 
 console.count("Click")
 console.count("Click")
 console.count("Click")
 console.countReset("Click")  //restablece el contador
 console.count("Click")
+
+//contar iteraciones de un bucle
+
+for (let i = 0; i < 9; i++) {
+  console.count("iteration nº")
+  
+}
 
 //TRACE, (muestra el seguimiento de la pila la ejecucion)
 

@@ -61,12 +61,28 @@ console.log("Users FINALIZADOS")
 
 console.timeEnd("ejercicios del 1 al 5")
 // 7. Valida con assert si un número es positivo
-let nombre = "Jonatan"
-console.assert(nombre==="Jonatan", "el nombre no es Jonatan")
+let resultado
 
-console.count("Jonatan")
+function sum(num, num2) {
+  resultado = num + num2
+  return resultado
+}
+
+sum(3, -7)
+console.log(resultado)
+console.assert(resultado >= 0, " El numero es negativo")
+
+/* SIMPLE
+let num = -7
+console.assert(resultado>= 0, " El numero es negativo") 
+*/
+
 // 8. Utiliza count
-
+for (let i = 0; i < 3; i++) {
+  console.count("iteration nº")
+  console.trace("seguim")
+  
+}
 // 9. Utiliza trace
-
+console.clear()
 // 10. Utiliza clear
