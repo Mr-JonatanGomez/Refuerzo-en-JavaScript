@@ -1,6 +1,8 @@
 // 1. Crea un función que utilice error correctamente
 // 2. Crea una función que utilice warn correctamente
 // 3. Crea una función que utilice info correctamente
+console.time("ejercicios del 1 al 5")
+
 let edadParticipante1 = 18
 
 class edadIlegal extends Error {
@@ -57,8 +59,12 @@ console.log("Users FINALIZADOS")
 
 // 6. Utiliza time
 
+console.timeEnd("ejercicios del 1 al 5")
 // 7. Valida con assert si un número es positivo
+let nombre = "Jonatan"
+console.assert(nombre==="Jonatan", "el nombre no es Jonatan")
 
+console.count("Jonatan")
 // 8. Utiliza count
 
 // 9. Utiliza trace
