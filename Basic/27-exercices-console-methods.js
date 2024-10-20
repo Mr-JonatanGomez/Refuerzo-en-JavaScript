@@ -24,7 +24,7 @@ try {
     comprobarEdadTorneo(edadParticipante1)
 } catch (error) {
     if (error instanceof edadIlegal) {
-        console.log(error.message)
+        console.error(error.message)
     }
 } finally {
     console.log("FIN DE EJERCICIO 1")
