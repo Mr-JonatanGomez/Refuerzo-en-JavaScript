@@ -17,3 +17,23 @@ export const PI = 3.1416
 export default function resta(a, b) {
   return a - b
 }
+
+export default class myClass(){
+    funcA(){
+        console.log("clase exportada")
+    }
+}
+
+//CLASES
+
+export class Circle{
+    constructor(radius){
+        this.radius=radius
+    }
+    calcArea(){
+        return Math.PI * Math.pow(this.radius, 2)
+    }
+    calcPerim(){
+        return Math.PI * 2 * this.radius
+    }
+}
