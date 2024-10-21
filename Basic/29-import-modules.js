@@ -42,9 +42,3 @@ console.log(cambioNombreResta(3,5))//el default puede cambiarse el nombre, al so
 //import {MyClass} from "./directorio/fichero.js" con el copy path route coger directorio de donde esta la class
 
 
-//MODULOS EXTERNOS
-//con node hay un modulo para trabajar con el SO, que se llama OS
-
-const os = require("os")
-
-console.log(os.platform)

@@ -18,11 +18,7 @@ export default function resta(a, b) {
   return a - b
 }
 
-export default class myClass(){
-    funcA(){
-        console.log("clase exportada")
-    }
-}
+
 
 //CLASES
 
